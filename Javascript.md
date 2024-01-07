@@ -19,3 +19,13 @@
     sovrascrittura
     • **Const** è una variabile di tipo locale definita da parentesi graffe che non permette la sovrascrittura.
 15. Hoisting consiste nell'effettuare il processo delle dichiarazioni del computer prima di qualsiasi altro codice.
+16. Il Garbage collection è un processo automatico per liberare la memoria degli oggetti non utilizzati.
+17. Un callback è un richiamo di una funzione passata come argomento di un'altra funzione.
+18. Il DOM può essere manipolato utilizzando metodi come: **getElementById**, **querySelector**, **appendChild** consentendo di accedere ad elementi HTML.
+19. Gli eventi sono azioni che avvengono nel DOM o nell'applicazione web e che possono essere "ascoltate" e gestite, come ad esempio il click del mouse, il caricamento della pagina o la pressione di un tasto.
+20. Per prevenire il comportamento predefinito di un evento in JavaScript, si può utilizzare il metodo **preventDefault()** sull'oggetto evento passato come parametro alla funzione di gestione dell'evento.
+21. Le espressioni regolari permettono di eseguire ricerche complesse e manipolazioni di stringhe.
+22. Si possono catturare gli errori utilizzando un blocco try che contiene il codice che potrebbe generare errori, e catch per gestire l'errore catturato.
+23. Le promesse sono oggetti che rappresentano il completamento (o il fallimento) di un'operazione asincrona, permettendo la gestione più chiara e pulita del flusso di lavoro asincrono.
+24. L'asincronia si riferisce alla capacità del linguaggio di eseguire operazioni in modo non sequenziale.
+25. **Async** dichiara una funzione asincrona, mentre **await** viene utilizzato all'interno di una funzione asincrona per attendere il completamento di un'operazione asincrona, rendendo il codice più leggibile e gestibile.
