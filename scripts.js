@@ -31,3 +31,31 @@ function rimuoviParagrafo() {
 
   paragrafoDaRimuovere.parentNode.removeChild(paragrafoDaRimuovere);
 }
+function mostraNascondi() {
+  const paragrafo = document.getElementById("par1");
+  if (paragrafo.style.display === "none") {
+    paragrafo.style.display = "block";
+  } else {
+    paragrafo.style.display = "none";
+  }
+}
+function cambiaTesto() {
+  const elemento = document.getElementById("par2");
+  elemento.innerHTML = "Io sono tuo padre";
+}
+function cambiaDimensione() {
+  const immagine = document.getElementById("imgg2");
+
+  if (immagine.width === "200px") {
+    immagine.width = "300px";
+    immagine.height = "200px";
+  } else {
+    immagine.width = "200px";
+    immagine.height = "150px";
+  }
+}
+function mostraAlert() {
+  alert(
+    "Hai vinto un iphone, ma per sbloccare la vincita dovrai prima inviare 500 euro per dimostrare che non sei un robot"
+  );
+}
