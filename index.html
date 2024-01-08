@@ -9,7 +9,7 @@
     <div id="sfondo">Questo è il mio div</div>
     <button onclick="cambiaColoreSfondo()">Cambia colore</button>
     <button onclick="cambiaTesto()">cambia testo</button>
-    <button onmouseenter="cambiaStile()">cambia colore scritta</button>
+    <button onmouseenter="cambiaStile()"></button>
     <div id="contenitore">
       <p>Questo è un paragrafo .</p>
       <button onclick="rimuoviParagrafo()">Rimuovi paragrafo</button>
@@ -34,7 +34,34 @@
           Clicca qui per vincere un iphone.
         </button>
       </div>
+      <div>
+        <div>
+          <input
+            type="text"
+            id="barraInput"
+            placeholder="Aggiungi un elemento"
+          />
+          <button onclick="aggiungiElementoLista()">Aggiungi</button>
+        </div>
+      </div>
+      <ul id="lista">
+        <li>Pane</li>
+        <li>Formaggio</li>
+        <li>Spigola</li>
+        <li>Birra</li>
+      </ul>
+      <button id="bottone4" onclick="aumentaValore()">Clicca qui</button>
+      <p>Il bottone è stato cliccato <span id="conteggio">0</span> volte.</p>
     </div>
+    <select id="selettoreMenu">
+      <option value="opzione1">Luke</option>
+      <option value="opzione2">Anakin</option>
+      <option value="opzione3">Obi</option>
+    </select>
+
+    <div id="contenutoOpzione1" style="display: none"></div>
+    <div id="contenutoOpzione2" style="display: none"></div>
+    <div id="contenutoOpzione3" style="display: none"></div>
   </body>
   <script src="scripts.js"></script>
 </html>

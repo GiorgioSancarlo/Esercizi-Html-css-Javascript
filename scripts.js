@@ -59,3 +59,59 @@ function mostraAlert() {
     "Hai vinto un iphone, ma per sbloccare la vincita dovrai prima inviare 500 euro per dimostrare che non sei un robot"
   );
 }
+
+const items = document.querySelectorAll("#lista li");
+
+items.forEach(function (item) {
+  item.addEventListener("mouseover", function () {
+    this.style.backgroundColor = "#1bd518";
+  });
+
+  item.addEventListener("mouseout", function () {
+    this.style.backgroundColor = "";
+  });
+});
+
+function aggiungiElementoLista() {
+  const valoreInput = document.getElementById("barraInput").value;
+
+  if (valoreInput !== "") {
+    const nuovoElemento = document.createElement("li");
+
+    nuovoElemento.appendChild(document.createTextNode(valoreInput));
+
+    // Aggiungi il nuovo elemento alla lista esistente
+    document.getElementById("lista").appendChild(nuovoElemento);
+
+    // Resetta il campo di input dopo l'aggiunta dell'elemento
+    document.getElementById("elementoInput").value = "";
+  }
+}
+// Seleziona il bottone e il campo del conteggio
+let bottone4 = document.getElementById("bottone4");
+let conteggioSpan = document.getElementById("conteggio");
+
+// Inizializza il conteggio a 0
+let conteggio = 0;
+function aumentaValore() {
+  conteggio++;
+
+  conteggioSpan.textContent = conteggio;
+}
+bottone4.addEventListener("click", aumentaValore);
+
+const selettoreMenu = document.getElementById("selettoreMenu");
+const contenuti = {
+  opzione1: document.getElementById("contenutoOpzione1"),
+  opzione2: document.getElementById("contenutoOpzione2"),
+  opzione3: document.getElementById("contenutoOpzione3"),
+};
+
+selettoreMenu.addEventListener("change", function () {
+  Object.keys(contenuti).forEach(function (key) {
+    contenuti[key].style.display = "none";
+  });
+
+  var opzioneSelezionata = this.value;
+  contenuti[opzioneSelezionata].style.display = "block";
+});
